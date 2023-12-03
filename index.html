@@ -13,23 +13,41 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap"
         rel="stylesheet">
+
+    <!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
     <script src="https://cdn.tailwindcss.com"></script>
+
 
     <style>
         * {
             font-family: 'Cairo', sans-serif;
             font-family: 'IBM Plex Sans Arabic', sans-serif;
         }
-    </style>
 
+        .bg-video {
+            width: 100%;
+            height: 560px;
+            overflow: hidden;
+            background-image: url('/design/video-bg.png');
+            background-size: cover;
+            opacity: 0.8;
+
+
+        }
+
+        .bg-video__content {
+            width: 100%;
+            height: 560px;
+        }
+    </style>
 </head>
 
 <body>
-    <header class="py-5 bg-white   md:fixed min-w-full" style="border-bottom:  0.03rem solid rgb(233, 233, 233);">
+    <header class="bg-white md:fixed min-w-full" style="border-bottom:  0.03rem solid rgb(233, 233, 233);">
 
-        <nav class="flex items-center justify-between w-[90%] mx-auto ">
+        <nav class="flex items-center justify-between w-[90%] mx-auto">
             <div>
-                <img class="w-28" src="./logo.jpeg" alt="">
+                <img class="w-40 md:w-50" src="./logo.jpeg" alt="">
             </div>
             <div class="flex lg:w-8/12">
                 <div id="nav-links"
@@ -59,8 +77,8 @@
             </div>
             <div class="flex items-center gap-4">
                 <button
-                    class="bg-[#1C4CBA] hover:text-[#1C4CBA] hover:bg-transparent border hover:border-[#1C4CBA]  duration-300 border-transparent px-5 py-2 rounded-lg text-white">
-                    تسجيل </button>
+                    class="bg-[#1C4CBA] hover:scale-105 invisible md:visible shadow-2xl duration-200 px-5 py-2 rounded-lg text-white">
+                    إتصل بنا </button>
                 <button onclick="toggleMenu()" class="p-1 md:hidden rounded-sm hover:bg-[#EEB841] ">
                     <img class="w-5" src="./icons/menu-svgrepo-com.svg" alt="">
                 </button>
@@ -74,12 +92,9 @@
                 background-repeat: no-repeat, no-repeat, no-repeat;
                 background-size: auto, auto, auto;
             ">
-
-
-
         <div class="max-w-screen-md text-center">
             <div class="text-[#0D1A39] px-2">
-                <h1 class="md:text-5xl md:leading-normal text-3xl font-semibold">
+                <h1 class="md:text-6xl md:leading-normal text-4xl	font-bold">
                     <!-- <strong class="text-blue-500 ">منصتى هب</strong> -->
                     حيث يتجسد الابداع وتولد الفرض
                 </h1>
@@ -89,16 +104,16 @@
                     و وصف للفئات المستدهدفة شرح وافي لطريقة تقديم الخدمات و </p>
             </div>
             <button
-                class="bg-[#1C4CBA] hover:bg-transparent border hover:border-[#1C4CBA] hover:text-[#1C4CBA] duration-300 border-transparent px-10 py-2 rounded-lg text-white">
+                class="bg-[#1C4CBA] hover:scale-105 shadow-2xl duration-200 rounded-lg text-white px-10 py-2 rounded-lg text-white">
                 أبدأ الان </button>
         </div>
 
     </section>
 
     <section id="services" class="px-4 py-16 md:p-28 leading-relaxed ">
-        <div class="md:flex gap-6 ">
-            <div class="mb-3 p-10  border border-gray-100 rounded-lg shadow  duration-300 hover:bg-[#274487] hover:cursor-pointer hover:scale-105 hover:text-white"
-                style="background-image: url(./design/top-left.svg);
+        <div class="md:flex gap-6">
+            <div class="mb-3 p-10  border border-gray-100 rounded-lg shadow  duration-300 hover:bg-[#274487] hover:cursor-pointer hover:scale-105 hover:text-white bg-orange-100"
+                style="background-image: url(./design/top-right.svg);
                 background-position: top left;
                 background-repeat: no-repeat;
                 background-size: auto;
@@ -123,8 +138,8 @@
 
             </div>
 
-            <div class="mb-3 p-10  border border-gray-100 rounded-lg shadow  duration-300 hover:bg-[#274487] hover:cursor-pointer hover:scale-105 hover:text-white"
-                style="background-image: url(./design/top-left.svg);
+            <div class="mb-3 p-10  border border-gray-100 rounded-lg shadow  duration-300 hover:bg-[#274487] hover:cursor-pointer hover:scale-105 hover:text-white bg-orange-100"
+                style="background-image: url(./design/top-right.svg);
             background-position: top left;
             background-repeat: no-repeat;
             background-size: auto;
@@ -151,8 +166,8 @@
         </div>
 
         <div class="md:flex gap-6 ">
-            <div class="mb-3 p-10  border border-gray-100 rounded-lg shadow  duration-300 hover:bg-[#274487] hover:cursor-pointer hover:scale-105 hover:text-white"
-                style="background-image: url(./design/top-left.svg);
+            <div class="mb-3 p-10  border border-gray-100 rounded-lg shadow  duration-300 hover:bg-[#274487] hover:cursor-pointer hover:scale-105 hover:text-white bg-orange-100"
+                style="background-image: url(./design/top-right.svg);
             background-position: top left;
             background-repeat: no-repeat;
             background-size: auto;
@@ -176,8 +191,8 @@
                 </p>
 
             </div>
-            <div class="mb-3 p-10  border border-gray-100 rounded-lg shadow  duration-300 hover:bg-[#274487] hover:cursor-pointer hover:scale-105 hover:text-white"
-                style="background-image: url(./design/top-left.svg);
+            <div class="mb-3 p-10  border border-gray-100 rounded-lg shadow  duration-300 hover:bg-[#274487] hover:cursor-pointer hover:scale-105 hover:text-white bg-orange-100"
+                style="background-image: url(./design/top-right.svg);
             background-position: top left;
             background-repeat: no-repeat;
             background-size: auto;
@@ -206,190 +221,8 @@
 
     </section>
 
-
-
-
-<!-- <div
-    class="grid mb-8 border border-gray-200 rounded-lg shadow-sm dark:border-gray-700 md:mb-12 md:grid-cols-2 bg-white dark:bg-gray-800">
-    <figure
-        class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-ss-lg md:border-e dark:bg-gray-800 dark:border-gray-700">
-        <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
-            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Very easy this was to integrate</h3>
-            <p class="my-4">If you care for your time, I hands down would go with this."</p>
-        </blockquote>
-        <figcaption class="flex items-center justify-center ">
-            <img class="rounded-full w-9 h-9"
-                src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
-                alt="profile picture">
-            <div class="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3">
-                <div>Bonnie Green</div>
-                <div class="text-sm text-gray-500 dark:text-gray-400 ">Developer at Open AI</div>
-            </div>
-        </figcaption>
-    </figure>
-    <figure
-        class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 md:rounded-se-lg dark:bg-gray-800 dark:border-gray-700">
-        <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
-            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Solid foundation for any project</h3>
-            <p class="my-4">Designing with Figma components that can be easily translated to the utility classes of
-                Tailwind CSS is a huge timesaver!"</p>
-        </blockquote>
-        <figcaption class="flex items-center justify-center ">
-            <img class="rounded-full w-9 h-9"
-                src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/roberta-casas.png"
-                alt="profile picture">
-            <div class="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3">
-                <div>Roberta Casas</div>
-                <div class="text-sm text-gray-500 dark:text-gray-400">Lead designer at Dropbox</div>
-            </div>
-        </figcaption>
-    </figure>
-    <figure
-        class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 md:rounded-es-lg md:border-b-0 md:border-e dark:bg-gray-800 dark:border-gray-700">
-        <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
-            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Mindblowing workflow</h3>
-            <p class="my-4">Aesthetically, the well designed components are beautiful and will undoubtedly level up your
-                next application."</p>
-        </blockquote>
-        <figcaption class="flex items-center justify-center ">
-            <img class="rounded-full w-9 h-9"
-                src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png" alt="profile picture">
-            <div class="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3">
-                <div>Jese Leos</div>
-                <div class="text-sm text-gray-500 dark:text-gray-400">Software Engineer at Facebook</div>
-            </div>
-        </figcaption>
-    </figure>
-    <figure
-        class="flex flex-col items-center justify-center p-8 text-center bg-white border-gray-200 rounded-b-lg md:rounded-se-lg dark:bg-gray-800 dark:border-gray-700">
-        <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
-            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Efficient Collaborating</h3>
-            <p class="my-4">You have many examples that can be used to create a fast prototype for your team."</p>
-        </blockquote>
-        <figcaption class="flex items-center justify-center ">
-            <img class="rounded-full w-9 h-9"
-                src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/joseph-mcfall.png"
-                alt="profile picture">
-            <div class="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3">
-                <div>Joseph McFall</div>
-                <div class="text-sm text-gray-500 dark:text-gray-400">CTO at Google</div>
-            </div>
-        </figcaption>
-    </figure>
-</div> -->
-
-
-    <!-- <section id="services" class="px-4 py-16 md:p-28 leading-relaxed">
-        <div class="md:flex gap-4 md:gap-8 p-4  rounded-lg md:bg-inherit ">
-            <div class="md:invisible visible pb-5">
-                <h1 class="font-extrabold text-3xl  ">Title</h1>
-            </div>
-            <div
-                class="bg-[#eeb7412f] text-[#0D1A39]-200 p-0 md:p-5 max-h-0 md:min-h-[280px]  rounded-md shadow invisible md:visible ">
-                <h1 class="text-2xl pb-4">service 1</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis mollitia obcaecati quod omnis
-                    accusamus assumenda expedita amet natus, magnam cupiditate beatae. Consequuntur ipsa reprehenderit
-                    dolores possimus cupiditate aliquid pariatur vel!</p>
-            </div>
-            <div
-                class="bg-[#eeb7412f] text-[#0D1A39]-200 p-0 md:p-5 max-h-0 md:min-h-[280px]  rounded-md shadow invisible md:visible">
-                <h1 class="text-2xl pb-4">service 2</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo ex consequatur dolores corrupti
-                    quibusdam aliquid ipsam tempora! Velit culpa blanditiis maxime sequi reprehenderit. Autem deleniti
-                    recusandae eius, a nisi fugit!</p>
-            </div>
-            <div class="bg-[#eeb7412f] text-[#0D1A39]-200 p-5  md:min-h-[220px] rounded-md shadow">
-                <h1 class="text-2xl pb-4">service 2</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis temporibus soluta eum asperiores
-                    obcaecati perferendis expedita. Ipsam quidem, placeat excepturi facere a ratione cupiditate sequi
-                    impedit magnam eos nesciunt asperiores!</p>
-            </div>
-            <div class="p-1 pt-0 pb-0 md:invisible visible">
-                <div class="p-1 bg-orange-200 rounded-br-md rounded-bl-md">
-                </div>
-            </div>
-            <div class="p-2 pt-0 md:invisible visible">
-                <div class="p-1 bg-cyan-200 rounded-br-md rounded-bl-md">
-                </div>
-            </div>
-        </div>
-
-        <div class="md:flex mt-14 gap-4 md:gap-8 p-4  rounded-lg md:bg-inherit ">
-            <div class="md:invisible visible pb-5">
-                <h1 class="font-extrabold text-3xl">Title</h1>
-            </div>
-            <div
-                class="bg-[#eeb7412f] text-[#0D1A39]-200 p-0 md:p-5 max-h-0 md:min-h-[280px] rounded-md shadow invisible md:visible">
-                <h1 class="text-2xl pb-4">service 2</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis mollitia obcaecati quod omnis
-                    accusamus assumenda expedita amet natus, magnam cupiditate beatae. Consequuntur ipsa reprehenderit
-                    dolores possimus cupiditate aliquid pariatur vel!</p>
-            </div>
-            <div
-                class="bg-[#eeb7412f] text-[#0D1A39]-200 p-0 md:p-5 max-h-0 md:min-h-[280px] rounded-md shadow invisible md:visible">
-                <h1 class="text-2xl pb-4">service 2</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo ex consequatur dolores corrupti
-                    quibusdam aliquid ipsam tempora! Velit culpa blanditiis maxime sequi reprehenderit. Autem deleniti
-                    recusandae eius, a nisi fugit!</p>
-            </div>
-            <div class="bg-[#eeb7412f] text-[#0D1A39]-200 p-5 md:min-h-[220px] rounded-md shadow">
-                <h1 class="text-2xl pb-4">service 2</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis temporibus soluta eum asperiores
-                    obcaecati perferendis expedita. Ipsam quidem, placeat excepturi facere a ratione cupiditate sequi
-                    impedit magnam eos nesciunt asperiores!</p>
-            </div>
-
-            <div class="p-1 pt-0 pb-0 md:invisible visible">
-                <div class="p-1 bg-orange-200 rounded-br-md rounded-bl-md">
-                </div>
-            </div>
-            <div class="p-2 pt-0 md:invisible visible">
-                <div class="p-1 bg-cyan-200 rounded-br-md rounded-bl-md">
-                </div>
-            </div>
-        </div>
-
-        <div class="md:flex mt-14 gap-4 md:gap-8 p-4  rounded-lg md:bg-inherit ">
-            <div class="md:invisible visible pb-5">
-                <h1 class="font-extrabold text-3xl  ">Title</h1>
-            </div>
-            <div
-                class="bg-[#eeb7412f] text-[#0D1A39]-200 p-0 md:p-5 max-h-0 md:min-h-[280px] rounded-md shadow invisible md:visible">
-                <h1 class="text-2xl pb-4">service r2</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis mollitia obcaecati quod omnis
-                    accusamus assumenda expedita amet natus, magnam cupiditate beatae. Consequuntur ipsa reprehenderit
-                    dolores possimus cupiditate aliquid pariatur vel!</p>
-            </div>
-            <div
-                class="bg-[#eeb7412f] text-[#0D1A39]-200 p-0 md:p-5 max-h-0 md:min-h-[280px] rounded-md shadow invisible md:visible">
-                <h1 class="text-2xl pb-4">service 2</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo ex consequatur dolores corrupti
-                    quibusdam aliquid ipsam tempora! Velit culpa blanditiis maxime sequi reprehenderit. Autem deleniti
-                    recusandae eius, a nisi fugit!</p>
-            </div>
-            <div class="bg-[#eeb74135] text-[#0D1A39]-200 p-5 md:min-h-[220px] rounded-md shadow">
-                <h1 class="text-2xl pb-4">service 3</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis temporibus soluta eum asperiores
-                    obcaecati perferendis expedita. Ipsam quidem, placeat excepturi facere a ratione cupiditate sequi
-                    impedit magnam eos nesciunt asperiores!</p>
-            </div>
-
-            <div class="p-1 pt-0 pb-0 md:invisible visible">
-                <div class="p-1 bg-purple-300 rounded-br-md rounded-bl-md">
-                </div>
-            </div>
-            <div class="p-2 pt-0 md:invisible visible">
-                <div class="p-1 bg-cyan-200 rounded-br-md rounded-bl-md">
-                </div>
-            </div>
-        </div>
-
-    </section> -->
-
-
-
     <section id="about" class="text-[#0D1A39] md:flex p-4 my-16 md:p-28 gap-8 text-center" style="
-                background-image: url(./design/q-white-down-removebg-preview.png), url(./design/q-white-up-removebg-preview.png);
+                background-image: url(./design/s-up.svg), url(./design/s-down.svg);
                 background-position: top center, bottom center;
                 background-repeat: no-repeat, no-repeat;
                 background-size: auto, auto;
@@ -409,12 +242,7 @@
         </div>
     </section>
 
-    <section class="md:flex my-12 p-4 pt-16 md:p-28 gap-8 text-center " style="
-                background-image: url(./design/q-white-up-removebg-preview.png);
-                background-position: bottom center;
-                background-repeat: no-repeat;
-                background-size: auto;
-            ">
+    <section class="md:flex my-12 p-4 pt-16 md:p-28 gap-8 text-center">
         <div class="p-5 my-6">
             <div class="flex justify-center items-cente pb-8">
                 <svg width="95" height="93" viewBox="0 0 95 93" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -431,7 +259,7 @@
                 ad nihil sint.</p>
         </div>
         <div class="p-5 my-6">
-            <div class="flex justify-center items-cente pb-8">
+            <div class="flex justify-center items-cente pb-8 ">
                 <svg width="94" height="93" viewBox="0 0 94 93" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M92.9033 36.2297C93.6475 39.4751 94 42.8351 94 46.1951C94 71.4711 72.9283 92.0127 47 92.0127C21.0717 92.0127 0 71.4711 0 46.1951C0 20.919 21.0717 0.377441 47 0.377441C50.4467 0.377441 53.8933 0.759255 57.2225 1.44652C58.28 1.67561 58.9458 2.7065 58.7108 3.7374C58.4758 4.7683 57.4183 5.41738 56.3608 5.18829C53.3058 4.53921 50.1333 4.19558 47 4.19558C23.2258 4.19558 3.91667 23.019 3.91667 46.1951C3.91667 69.3711 23.2258 88.1945 47 88.1945C70.7742 88.1945 90.0833 69.3711 90.0833 46.1951C90.0833 43.1024 89.7308 40.0479 89.065 37.0697C88.83 36.0388 89.4958 35.0079 90.5533 34.7788C91.6108 34.5497 92.6683 35.1988 92.9033 36.2297ZM52.4833 20.0027C53.5408 20.1936 54.5592 19.5445 54.7942 18.5136C54.99 17.4827 54.3242 16.49 53.2667 16.2609C51.23 15.8409 49.115 15.65 47 15.65C29.7275 15.65 15.6667 29.3571 15.6667 46.1951C15.6667 63.033 29.7275 76.7401 47 76.7401C64.2725 76.7401 78.3333 63.033 78.3333 46.1951C78.3333 44.1333 78.1375 42.0715 77.7067 40.086C77.5108 39.0551 76.4533 38.4061 75.3958 38.597C74.3383 38.8261 73.6333 39.8188 73.8683 40.8497C74.2208 42.606 74.4167 44.4005 74.4167 46.1951C74.4167 60.9331 62.1183 72.922 47 72.922C31.8817 72.922 19.5833 60.9331 19.5833 46.1951C19.5833 31.4571 31.8817 19.4681 47 19.4681C48.8408 19.4681 50.6817 19.659 52.4833 20.0027ZM45.3158 34.8552C46.3733 34.7025 47.1175 33.7479 46.9608 32.6789C46.8042 31.6098 45.825 30.8843 44.7283 31.0752C37.0517 32.1443 31.2942 38.6351 31.2942 46.1951C31.2942 54.6331 38.305 61.4676 46.9608 61.4676C54.7158 61.4676 61.3742 55.8549 62.4708 48.3714C62.6275 47.3405 61.8833 46.3478 60.8258 46.1951C59.7683 46.0423 58.75 46.7678 58.5933 47.7987C57.7708 53.4113 52.7575 57.6113 46.9608 57.6113C40.4983 57.6113 35.2108 52.4568 35.2108 46.1569C35.2108 40.506 39.5192 35.6188 45.2767 34.817L45.3158 34.8552ZM62.6667 28.2116V16.91C62.6667 14.3518 63.685 11.9464 65.5258 10.1519L75.0042 0.950162C75.5525 0.415623 76.4142 0.224716 77.1192 0.530167C77.8633 0.835618 78.3333 1.52288 78.3333 2.28651V15.65H92.0417C92.825 15.65 93.53 16.1082 93.8433 16.8336C94.1567 17.559 93.9608 18.3609 93.4125 18.8954L83.9733 28.0971C82.1325 29.8916 79.665 30.8843 77.0408 30.8843H65.4475L48.41 47.4932C48.0183 47.875 47.5092 48.0659 47.0392 48.0659C46.5692 48.0659 46.0208 47.875 45.6683 47.4932C44.885 46.7296 44.885 45.546 45.6683 44.7823L62.7058 28.1735L62.6667 28.2116ZM66.5833 27.1044H77.0408C78.6075 27.1044 80.0958 26.4935 81.1925 25.4244L87.3025 19.4681H76.375C75.2783 19.4681 74.4167 18.6281 74.4167 17.559V6.90645L68.3067 12.8627C67.21 13.9318 66.5833 15.3827 66.5833 16.91V27.1044Z"
@@ -447,9 +275,17 @@
         </div>
     </section>
 
-    <section id="contact" class="flex md:flex-col justify-center items-center  p-4 pt-14 md:p-28 gap-8 text-center"
+    <section>
+        <div class="bg-video">
+            <video class="bg-video__content" autoplay muted loop>
+                <source src="/design/video.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+
+    . <section id="contact" class="flex md:flex-col justify-center items-center  p-4 pt-14 md:p-28 gap-8 text-center"
         style="
-            background-image: url(./design/q-white-left-removebg-preview.png), url(./design/q-white-right-removebg-preview.png);
+            background-image: url(./design/s-left.svg), url(./design/s-right.svg);
             background-position: right center, left center;
             background-repeat: no-repeat, no-repeat;
             background-size: auto, auto;
@@ -464,23 +300,23 @@
                     <div class="flex flex-col md:flex-row  gap-1 text-start">
                         <div class="flex flex-col w-full md:w-6/12">
                             <label class="py-2 text-gray-600" for="name"> الاسم </label>
-                            <input class=" rounded-lg border-md border-gray-300 focus:border-xl" name="name"
+                            <input class=" rounded-lg border p-2 border-gray-300 focus:outline-none focus:ring focus:ring-[#EEB841] " name="name"
                                 type="text">
                         </div>
                         <div class="flex flex-col w-full md:w-6/12">
                             <label class="py-2 text-gray-600" for="email"> البريد الالركتروني </label>
-                            <input class="rounded-lg border-md border-gray-300 focus:border-xl" name="email"
+                            <input class="rounded-lg border p-2 border-gray-300 focus:outline-none focus:ring focus:ring-[#EEB841]" name="email"
                                 type="text">
                         </div>
                     </div>
 
                     <div class="flex flex-col w-full">
                         <label class="py-2 text-gray-600" for="email"> الرسالة </label>
-                        <textarea class="rounded-lg border-gray-300" name="message" id="message" rows="6"></textarea>
+                        <textarea class="rounded-lg border border-gray-300 focus:outline-none focus:ring focus:ring-[#EEB841]" name="message" id="message" rows="6"></textarea>
                     </div>
 
                     <div class="flex flex-col py-3">
-                        <button class="py-3 bg-[#EEB841] rounded-lg text-[#0D1A39] font-semibold"> إرســال </button>
+                        <button class="py-3 bg-[#EEB841] rounded-lg text-[#0D1A39] focus:outline-none focus:ring focus:ring-[#1C4CBA] font-semibold"> إرســال </button>
                     </div>
 
                 </div>
@@ -491,7 +327,7 @@
 
     <section class="flex flex-col md:flex-row justify-center gap-6 p-4 pt-8 ">
 
-        <div class="p-3 flex flex-col justify-center">
+        <div class="p-3 flex flex-col justify-center shadow rounded-lg">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2990.274257380938!2d-70.56068388481569!3d41.45496659976631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e52963ac45bbcb%3A0xf05e8d125e82af10!2sDos%20Mas!5e0!3m2!1sen!2sus!4v1671220374408!5m2!1sen!2sus"
                 height="450" style="border:0;" allowfullscreen="" loading="lazy"
@@ -528,6 +364,11 @@
         </div>
 
     </section>
+
+    <br>
+    <br>
+    <br>
+    <br>
 
     <footer class="bg-[#EEB841] text-center mt-10 py-3">
         <p> جميع الحقوق محفوظـة @ لمنصتي هب </p>
