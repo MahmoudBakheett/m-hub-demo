@@ -13,7 +13,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap"
         rel="stylesheet">
-        <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 
     <style>
         * {
@@ -25,8 +25,8 @@
 </head>
 
 <body>
-    <header class="py-5 bg-white   md:fixed min-w-full" style="border-bottom:  0.03rem solid rgb(233, 233, 233);" >
-    
+    <header class="py-5 bg-white   md:fixed min-w-full" style="border-bottom:  0.03rem solid rgb(233, 233, 233);">
+
         <nav class="flex items-center justify-between w-[90%] mx-auto ">
             <div>
                 <img class="w-28" src="./logo.jpeg" alt="">
@@ -60,7 +60,7 @@
             <div class="flex items-center gap-4">
                 <button
                     class="bg-[#1C4CBA] hover:text-[#1C4CBA] hover:bg-transparent border hover:border-[#1C4CBA]  duration-300 border-transparent px-5 py-2 rounded-lg text-white">
-                    تسجيل  </button> 
+                    تسجيل </button>
                 <button onclick="toggleMenu()" class="p-1 md:hidden rounded-sm hover:bg-[#EEB841] ">
                     <img class="w-5" src="./icons/menu-svgrepo-com.svg" alt="">
                 </button>
@@ -69,15 +69,19 @@
     </header>
 
     <section id="home" class="min-h-screen text-center flex flex-col justify-center items-center" style="
-                background-image: url(./design/h-left-removebg-preview.png), url(./design/h-right-removebg-preview.png);
-                background-position: left center, right center;
-                background-repeat: no-repeat, no-repeat;
-                background-size: auto, auto;
+                background-image: url(./design/h-left.svg), url(./design/h-right.svg), url(./design/s-down.svg);
+                background-position: left center, right center , bottom center;
+                background-repeat: no-repeat, no-repeat, no-repeat;
+                background-size: auto, auto, auto;
             ">
+
+
+
         <div class="max-w-screen-md text-center">
             <div class="text-[#0D1A39] px-2">
                 <h1 class="md:text-5xl md:leading-normal text-3xl font-semibold">
-                    عنوان عريض لتوضيح عمل المنصة بكلمات مختصرة بليغة توصل الفكرة الكاملة بدون إطالة
+                    <!-- <strong class="text-blue-500 ">منصتى هب</strong> -->
+                    حيث يتجسد الابداع وتولد الفرض
                 </h1>
                 <p class="p-4 py-20 leading-relaxed">شرح وافي لطريقة تقديم الخدمات و وصف للفئات المستدهدفة شرح وافي
                     لطريقة تقديم الخدمات و وصف للفئات المستدهدفة شرح وافي لطريقة تقديم و وصف للفئات شرح وافي لطريقة
@@ -88,9 +92,194 @@
                 class="bg-[#1C4CBA] hover:bg-transparent border hover:border-[#1C4CBA] hover:text-[#1C4CBA] duration-300 border-transparent px-10 py-2 rounded-lg text-white">
                 أبدأ الان </button>
         </div>
+
     </section>
 
-    <section id="services" class="px-4 py-16 md:p-28 leading-relaxed">
+    <section id="services" class="px-4 py-16 md:p-28 leading-relaxed ">
+        <div class="md:flex gap-6 ">
+            <div class="mb-3 p-10  border border-gray-100 rounded-lg shadow  duration-300 hover:bg-[#274487] hover:cursor-pointer hover:scale-105 hover:text-white"
+                style="background-image: url(./design/top-left.svg);
+                background-position: top left;
+                background-repeat: no-repeat;
+                background-size: auto;
+                ">
+                <svg class="w-8 min-h-8 text-[#EEB841] mb-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor" viewBox="0 0 20 20">
+                    <path
+                        d="M18 5h-.7c.229-.467.349-.98.351-1.5a3.5 3.5 0 0 0-3.5-3.5c-1.717 0-3.215 1.2-4.331 2.481C8.4.842 6.949 0 5.5 0A3.5 3.5 0 0 0 2 3.5c.003.52.123 1.033.351 1.5H2a2 2 0 0 0-2 2v3a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1V7a2 2 0 0 0-2-2ZM8.058 5H5.5a1.5 1.5 0 0 1 0-3c.9 0 2 .754 3.092 2.122-.219.337-.392.635-.534.878Zm6.1 0h-3.742c.933-1.368 2.371-3 3.739-3a1.5 1.5 0 0 1 0 3h.003ZM11 13H9v7h2v-7Zm-4 0H2v5a2 2 0 0 0 2 2h3v-7Zm6 0v7h3a2 2 0 0 0 2-2v-5h-5Z" />
+                </svg>
+                <a href="#">
+                    <h5 class="mb-2 text-2xl font-semibold tracking-tight  ">Need a help in Claim?</h5>
+                </a>
+                <p class="mb-3 font-normal  ">
+                    Go to this step by step guideline process on how to
+                    certify for your weekly benefits:
+                    Go to this step by step guideline process on how to
+                    certify for your weekly benefits:
+                    certify for your weekly benefits:
+                    Go to this step by step guideline process on how to
+                    certify for your weekly benefits:
+                </p>
+
+            </div>
+
+            <div class="mb-3 p-10  border border-gray-100 rounded-lg shadow  duration-300 hover:bg-[#274487] hover:cursor-pointer hover:scale-105 hover:text-white"
+                style="background-image: url(./design/top-left.svg);
+            background-position: top left;
+            background-repeat: no-repeat;
+            background-size: auto;
+            ">
+                <svg class="w-8 min-h-8 text-[#EEB841] mb-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor" viewBox="0 0 20 20">
+                    <path
+                        d="M18 5h-.7c.229-.467.349-.98.351-1.5a3.5 3.5 0 0 0-3.5-3.5c-1.717 0-3.215 1.2-4.331 2.481C8.4.842 6.949 0 5.5 0A3.5 3.5 0 0 0 2 3.5c.003.52.123 1.033.351 1.5H2a2 2 0 0 0-2 2v3a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1V7a2 2 0 0 0-2-2ZM8.058 5H5.5a1.5 1.5 0 0 1 0-3c.9 0 2 .754 3.092 2.122-.219.337-.392.635-.534.878Zm6.1 0h-3.742c.933-1.368 2.371-3 3.739-3a1.5 1.5 0 0 1 0 3h.003ZM11 13H9v7h2v-7Zm-4 0H2v5a2 2 0 0 0 2 2h3v-7Zm6 0v7h3a2 2 0 0 0 2-2v-5h-5Z" />
+                </svg>
+                <a href="#">
+                    <h5 class="mb-2 text-2xl font-semibold tracking-tight  ">Need a help in Claim?</h5>
+                </a>
+                <p class="mb-3 font-normal  ">
+                    Go to this step by step guideline process on how to
+                    certify for your weekly benefits:
+                    Go to this step by step guideline process on how to
+                    certify for your weekly benefits:
+                    certify for your weekly benefits:
+                    Go to this step by step guideline process on how to
+                    certify for your weekly benefits:
+                </p>
+
+            </div>
+        </div>
+
+        <div class="md:flex gap-6 ">
+            <div class="mb-3 p-10  border border-gray-100 rounded-lg shadow  duration-300 hover:bg-[#274487] hover:cursor-pointer hover:scale-105 hover:text-white"
+                style="background-image: url(./design/top-left.svg);
+            background-position: top left;
+            background-repeat: no-repeat;
+            background-size: auto;
+        ">
+                <svg class="w-8 min-h-8 text-[#EEB841] mb-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor" viewBox="0 0 20 20">
+                    <path
+                        d="M18 5h-.7c.229-.467.349-.98.351-1.5a3.5 3.5 0 0 0-3.5-3.5c-1.717 0-3.215 1.2-4.331 2.481C8.4.842 6.949 0 5.5 0A3.5 3.5 0 0 0 2 3.5c.003.52.123 1.033.351 1.5H2a2 2 0 0 0-2 2v3a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1V7a2 2 0 0 0-2-2ZM8.058 5H5.5a1.5 1.5 0 0 1 0-3c.9 0 2 .754 3.092 2.122-.219.337-.392.635-.534.878Zm6.1 0h-3.742c.933-1.368 2.371-3 3.739-3a1.5 1.5 0 0 1 0 3h.003ZM11 13H9v7h2v-7Zm-4 0H2v5a2 2 0 0 0 2 2h3v-7Zm6 0v7h3a2 2 0 0 0 2-2v-5h-5Z" />
+                </svg>
+                <a href="#">
+                    <h5 class="mb-2 text-2xl font-semibold tracking-tight  ">Need a help in Claim?</h5>
+                </a>
+                <p class="mb-3 font-normal  ">
+                    Go to this step by step guideline process on how to
+                    certify for your weekly benefits:
+                    Go to this step by step guideline process on how to
+                    certify for your weekly benefits:
+                    certify for your weekly benefits:
+                    Go to this step by step guideline process on how to
+                    certify for your weekly benefits:
+                </p>
+
+            </div>
+            <div class="mb-3 p-10  border border-gray-100 rounded-lg shadow  duration-300 hover:bg-[#274487] hover:cursor-pointer hover:scale-105 hover:text-white"
+                style="background-image: url(./design/top-left.svg);
+            background-position: top left;
+            background-repeat: no-repeat;
+            background-size: auto;
+        ">
+                <svg class="w-8 min-h-8 text-[#EEB841] mb-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor" viewBox="0 0 20 20">
+                    <path
+                        d="M18 5h-.7c.229-.467.349-.98.351-1.5a3.5 3.5 0 0 0-3.5-3.5c-1.717 0-3.215 1.2-4.331 2.481C8.4.842 6.949 0 5.5 0A3.5 3.5 0 0 0 2 3.5c.003.52.123 1.033.351 1.5H2a2 2 0 0 0-2 2v3a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1V7a2 2 0 0 0-2-2ZM8.058 5H5.5a1.5 1.5 0 0 1 0-3c.9 0 2 .754 3.092 2.122-.219.337-.392.635-.534.878Zm6.1 0h-3.742c.933-1.368 2.371-3 3.739-3a1.5 1.5 0 0 1 0 3h.003ZM11 13H9v7h2v-7Zm-4 0H2v5a2 2 0 0 0 2 2h3v-7Zm6 0v7h3a2 2 0 0 0 2-2v-5h-5Z" />
+                </svg>
+                <a href="#">
+                    <h5 class="mb-2 text-2xl font-semibold tracking-tight  ">Need a help in Claim?</h5>
+                </a>
+                <p class="mb-3 font-normal  ">
+                    Go to this step by step guideline process on how to
+                    certify for your weekly benefits:
+                    Go to this step by step guideline process on how to
+                    certify for your weekly benefits:
+                    certify for your weekly benefits:
+                    Go to this step by step guideline process on how to
+                    certify for your weekly benefits:
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+<!-- <div
+    class="grid mb-8 border border-gray-200 rounded-lg shadow-sm dark:border-gray-700 md:mb-12 md:grid-cols-2 bg-white dark:bg-gray-800">
+    <figure
+        class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-ss-lg md:border-e dark:bg-gray-800 dark:border-gray-700">
+        <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Very easy this was to integrate</h3>
+            <p class="my-4">If you care for your time, I hands down would go with this."</p>
+        </blockquote>
+        <figcaption class="flex items-center justify-center ">
+            <img class="rounded-full w-9 h-9"
+                src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                alt="profile picture">
+            <div class="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3">
+                <div>Bonnie Green</div>
+                <div class="text-sm text-gray-500 dark:text-gray-400 ">Developer at Open AI</div>
+            </div>
+        </figcaption>
+    </figure>
+    <figure
+        class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 md:rounded-se-lg dark:bg-gray-800 dark:border-gray-700">
+        <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Solid foundation for any project</h3>
+            <p class="my-4">Designing with Figma components that can be easily translated to the utility classes of
+                Tailwind CSS is a huge timesaver!"</p>
+        </blockquote>
+        <figcaption class="flex items-center justify-center ">
+            <img class="rounded-full w-9 h-9"
+                src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/roberta-casas.png"
+                alt="profile picture">
+            <div class="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3">
+                <div>Roberta Casas</div>
+                <div class="text-sm text-gray-500 dark:text-gray-400">Lead designer at Dropbox</div>
+            </div>
+        </figcaption>
+    </figure>
+    <figure
+        class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 md:rounded-es-lg md:border-b-0 md:border-e dark:bg-gray-800 dark:border-gray-700">
+        <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Mindblowing workflow</h3>
+            <p class="my-4">Aesthetically, the well designed components are beautiful and will undoubtedly level up your
+                next application."</p>
+        </blockquote>
+        <figcaption class="flex items-center justify-center ">
+            <img class="rounded-full w-9 h-9"
+                src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png" alt="profile picture">
+            <div class="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3">
+                <div>Jese Leos</div>
+                <div class="text-sm text-gray-500 dark:text-gray-400">Software Engineer at Facebook</div>
+            </div>
+        </figcaption>
+    </figure>
+    <figure
+        class="flex flex-col items-center justify-center p-8 text-center bg-white border-gray-200 rounded-b-lg md:rounded-se-lg dark:bg-gray-800 dark:border-gray-700">
+        <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Efficient Collaborating</h3>
+            <p class="my-4">You have many examples that can be used to create a fast prototype for your team."</p>
+        </blockquote>
+        <figcaption class="flex items-center justify-center ">
+            <img class="rounded-full w-9 h-9"
+                src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/joseph-mcfall.png"
+                alt="profile picture">
+            <div class="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3">
+                <div>Joseph McFall</div>
+                <div class="text-sm text-gray-500 dark:text-gray-400">CTO at Google</div>
+            </div>
+        </figcaption>
+    </figure>
+</div> -->
+
+
+    <!-- <section id="services" class="px-4 py-16 md:p-28 leading-relaxed">
         <div class="md:flex gap-4 md:gap-8 p-4  rounded-lg md:bg-inherit ">
             <div class="md:invisible visible pb-5">
                 <h1 class="font-extrabold text-3xl  ">Title</h1>
@@ -195,7 +384,9 @@
             </div>
         </div>
 
-    </section>
+    </section> -->
+
+
 
     <section id="about" class="text-[#0D1A39] md:flex p-4 my-16 md:p-28 gap-8 text-center" style="
                 background-image: url(./design/q-white-down-removebg-preview.png), url(./design/q-white-up-removebg-preview.png);
@@ -206,14 +397,14 @@
         <div>
             <h1 class="text-2xl py-6 font-semibold">من نحن </h1>
             <p class="py-6 pb-12 w-12/12 md:w-7/12 mx-auto leading-relaxed">
-                نحن شركة متميزة في مجال دعم ريادة األعمال في دولة
-                اإلمارات العربية المتحدة، نهدف لتبسيط عملية التحول
+                حنشركةمتميزةفي مجالدعم ريادة األعمالفي دولة
+                اإلمارات العربية المتحدة،نهدفلتبسيط عملية التحول
                 الريادي للشركات والمؤسسات، حيث نقدم بيئة فريدة تجمع
-                بين الخبرة واالبتكار، وذلك من خالل فريق مكون من العديد
-                من الخبراء في مجال حضانات األعمال، نسعى جاهدين
-                لتحفيز األفكار االستثنائية وتحويلها إلى مشاريع ناجحة، عبر
+                بين الخبرة واالبتكار، وذلكمن خالل فريق مكون من العديد
+                من الخبراء في مجالحضانات األعمال، نسعى جاهدين
+                لتحفيز األفكار االستثنائيةوتحويلها إلى مشاريع ناجحة،عبر
                 تقديم دعم فعال يلبي احتياجات رواد األعمال والمستثمرين
-                في جميع مراحل نمو مشاريعهم،
+                في جميع مراحل نمو مشاريعهم
             </p>
         </div>
     </section>
@@ -343,7 +534,7 @@
     </footer>
 
     <script>
-        function toggleMenu (e) {
+        function toggleMenu(e) {
             document.getElementById("nav-links").classList.toggle('top-[10%]');
             document.getElementById("nav-links").classList.toggle('top-[-100%]');
 
@@ -352,7 +543,7 @@
                 li.classList.add('border-white');
             });
 
-            if(e) {
+            if (e) {
                 e.classList.add('border-[#EEB841]');
                 e.classList.toggle('border-white');
             }
